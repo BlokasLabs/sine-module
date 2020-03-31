@@ -1,0 +1,21 @@
+{
+	"name": "sine",
+	"version": "1.0.0",
+	"description": "Sine Audio Test",
+	"author": "Blokas",
+	"launch_mode": "auto",
+	"depends_on": [
+		"jack.service",
+		{
+			"service": "pisound-btn.service",
+			"config": "sine-pisound-btn.conf"
+		}
+	],
+	"services": [
+	],
+	"scripts": {
+		"install": "install.sh",
+		"launch": "launch.sh",
+		"stop": "stop.sh"
+	}
+}
